@@ -19,6 +19,8 @@ run this command in the directory in which we want to install the virtual enviro
 - Sometimes adding packages to your system can create dependency hell where the packages that you're adding has some dependency of a particular package with updated version but your system uses the same package with a downgraded version, and if your updated package has been installed due to your command then your system can break coz its not compatible with the new version of the dependency
 - to prevent this, the system gives error of externally managed environment
 
+- sometimes, if we're using package installer which is globally installed then too this error of externally managed, like for example if we use pip to install something in our virtual environment and pip that is getting used is the one globally present then its problematic, therefore we have to use uv pip for every command when using uv 
+
 # Decorator functions 
 
 - decorator functions are defined in a way to make sure that they accept the function as an input over which they are called using the @ syntax
