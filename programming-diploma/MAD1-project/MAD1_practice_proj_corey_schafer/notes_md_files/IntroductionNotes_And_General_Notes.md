@@ -16,6 +16,8 @@ run this command in the directory in which we want to install the virtual enviro
 
 - virtual environments are created so that projects having different versions of python don't interfere with each other
 - like if we do changes in python version then it may break the projects having different versions of python
+- Sometimes adding packages to your system can create dependency hell where the packages that you're adding has some dependency of a particular package with updated version but your system uses the same package with a downgraded version, and if your updated package has been installed due to your command then your system can break coz its not compatible with the new version of the dependency
+- to prevent this, the system gives error of externally managed environment
 
 # Decorator functions 
 
